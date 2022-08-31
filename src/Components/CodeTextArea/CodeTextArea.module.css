@@ -1,0 +1,60 @@
+.styledCodeContainer {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.codeTextContainer {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.codeTextOutsideWrapper {
+  padding-top: 4px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #2d2b57;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.75);
+}
+.codeTextAreaWrapper {
+  position: relative;
+}
+.codeTextAreaWrapper > textarea {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(12px, 1.6vw, 16px);
+  color: transparent;
+  background: transparent;
+  padding: 1rem;
+  caret-color: white;
+  resize: none;
+  outline: none;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  overflow: hidden;
+  border: none;
+}
+
+.codeTag {
+  white-space: pre-wrap !important;
+}
+@media screen and (max-width: 1000px) {
+  .styledCodeContainer {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 842px) {
+  .styledCodeContainer {
+    width: 60%;
+  }
+}
+

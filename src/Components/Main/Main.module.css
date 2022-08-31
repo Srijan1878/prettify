@@ -1,0 +1,29 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  min-height: calc(100vh - 3rem);
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+.mainContainer > div:last-child > div:nth-last-child(2) {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 750px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .mainContainer > div:first-child {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .mainContainer > div:last-child {
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .mainContainer > div:last-child {
+    width: 100%;
+  }
+}

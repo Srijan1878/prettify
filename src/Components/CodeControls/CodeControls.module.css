@@ -1,0 +1,36 @@
+.CodeControlsContainer {
+  width: 25%;
+  min-width: 250px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d1d1d;
+  border-radius: 16px;
+  box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.buttonWrapper > button {
+  width: 35%;
+  margin-top: auto;
+  margin-left: auto;
+  font-size: clamp(12px, 1.6vw, 14px);
+}
+.buttonWrapper {
+  width: calc(100% - 2rem);
+  margin-top: auto;
+  margin-bottom: 1rem;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.CodeControlsContainer > h4 {
+  font-weight: 500;
+  margin-block: 0;
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  background-color: var(--bg-primary);
+  padding-block: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+}

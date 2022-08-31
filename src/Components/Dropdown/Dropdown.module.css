@@ -1,0 +1,60 @@
+.dropdownLabel {
+  text-transform: capitalize;
+  color: white;
+}
+.dropdown {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  backdrop-filter: blur(5px);
+  -webkit-box-shadow: inset 0px 0px 8px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 8px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 8px -1px rgba(0, 0, 0, 0.75);
+  caret-color: white;
+  background-color: var(--bg-primary);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.dropdownMenuWrapper {
+  border-top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 99;
+  color: black;
+  bottom: 0%;
+  transform: translateY(100%);
+  max-height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  padding-inline: 0;
+  width: calc(100% + 16px);
+}
+.dropdownMenuWrapper::-webkit-scrollbar {
+  display: none;
+}
+.dropdownMenuWrapper > p {
+  cursor: pointer;
+  text-align: left;
+  padding: 0.5rem;
+  width: 100%;
+  margin-block: 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid white;
+}
+.dropdownMenuWrapper > p {
+  cursor: pointer;
+  text-align: left;
+  padding-block: 0.5rem;
+  margin-block: 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid white;
+  transition: all 0.2s ease-in-out;
+}
+.dropdownMenuWrapper > p:hover {
+  color: black;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}

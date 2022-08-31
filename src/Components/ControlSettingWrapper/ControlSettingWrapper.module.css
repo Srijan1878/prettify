@@ -1,0 +1,15 @@
+.controlSettingWrapper {
+  align-items: center;
+  margin-top: 1rem;
+  display: flex;
+  width: calc(100% - 2rem);
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #343434;
+  justify-content: space-between;  
+}
+.controlSettingWrapper label{
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: white;
+  text-transform: capitalize;
+}
