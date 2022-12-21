@@ -29,7 +29,9 @@ function getControlSettingComponent({ type, ...props }) {
 function CodeControls() {
   const { codeElementRef } = useContext(ThemeContext);
 
-  const handleDownload = () => downloadHandler(codeElementRef);
+  const handleDownload = () => {
+    downloadHandler(codeElementRef);
+  };
 
   return (
     <div className={styles.CodeControlsContainer}>

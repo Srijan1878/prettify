@@ -7,8 +7,6 @@ function Watermark() {
   const { activeWatermark, watermarkColor: color } =
     React.useContext(ThemeContext);
   return useMemo(() => {
-    console.log("Rendering Watermark Component");
-
     if (!activeWatermark.trim().length) return;
 
     return (
