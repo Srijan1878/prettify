@@ -10,8 +10,6 @@ function Slider({ label, stateType, setStateType, min, max, step }) {
     const setRangeValue = (e) => {
       setState((prevTheme) => e.target.value);
     };
-    console.log("Rendering Slider Component");
-
     return (
       <>
         <div className={styles.labelWrapper}>
