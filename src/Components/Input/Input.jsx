@@ -10,8 +10,6 @@ function Input({ label, stateType, setStateType }) {
   return useMemo(() => {
     const setInputValue = (e) => setState(e.target.value);
 
-    console.log('Rendering Input Component')
-
     return (
       <>
         <label htmlFor={"input"}>{label}</label>

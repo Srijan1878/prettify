@@ -25,7 +25,7 @@ function CodeTextArea() {
   const BeautifiedCodeRef = useRef();
 
   useEffect(() => {
-    setCodeElementRef(BeautifiedCodeRef);
+    if (BeautifiedCodeRef.current) setCodeElementRef(BeautifiedCodeRef);
   }, []);
 
   return (
